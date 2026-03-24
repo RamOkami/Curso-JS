@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
-<body>
-    <h1 id="titulo-principal">Hola Mundo</h1>
-    <p id="texto">Este es un párrafo.</p>
-    <button id="boton">Haz clic aquí</button>
+<body class="min-w-sm max-w-xl m-auto items-center bg-gray-100">
+    <header class="bg-gray-800 text-white p-4">
+        <h1 id="title" class="font-bold text-xl">OKAMI</h1>
+    </header>
+
+    <div id="hover" class="grid grid-cols-3 grid-rows-6 gap-2 mt-2 ml-2 mr-2 text-white">
+        <a class="col-span-2 row-span-3 bg-gray-700 p-2 pb-15 relative overflow-hidden hover:bg-gray-800 hover:scale-102 transition group">
+            <h1>HTML</h1>
+            <img src="assets/img/html_icon.webp" width="150px" class="absolute -bottom-8 -right-9 group-hover:scale-110 group-hover:transition">
+        </a>
+        <a id="hover" class="row-span-3 col-start-3 bg-gray-500 p-2 pb-15 relative overflow-hidden hover:bg-gray-600 hover:scale-102 transition">
+            <h1>CSS</h1>
+        </a>
+        <a id="hover" class="row-span-3 row-start-4 bg-gray-500 p-2 pb-15 relative overflow-hidden hover:bg-gray-600 hover:scale-102 transition">
+            <h1>JavaScript</h1>
+        </a>
+        <a id="hover" class="col-span-2 row-span-3 row-start-4 bg-gray-700 relative overflow-hidden p-2 pb-15 hover:bg-gray-800 hover:scale-102 transition">
+            <h1>C++</h1>
+        </a>
+    </div>
+    
 </body>
-<script src="app.js" ></script>
+<script src="assets/js/app.js"></script>
 </html>
