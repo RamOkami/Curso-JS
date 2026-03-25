@@ -6,18 +6,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="assets/css/input.css">
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
 
-    <title>CALCULADORA</title>
+    <title>Calculadora | Proyecto 01</title>
 </head>
-<body class="bg-gray-900 flex items-center justify-center h-screen m-auto min-w-sm max-w-xl">
+<body class="bg-gray-900 flex flex-col items-center justify-center h-screen m-auto min-w-sm max-w-xl">
     <section id="calculator" class="bg-slate-800 text-white rounded-3xl p-6 text-center shadow-2xl">
         <!--DISPLAY-->
         <input type="text" id="display" disabled class="bg-slate-700 rounded-xl text-white mb-10 p-2 text-5xl max-w-sm shadow-xl">
         <br>
         <section class="botones grid grid-cols-4 grid-rows-5 gap-2 text-xl">
             <!--OPERADORES-->
-            <button id="ac" class="operator bg-yellow-700 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-yellow-800 transition">AC</button>
-            <button id="de" class="operator bg-yellow-600 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-yellow-700 transition">DEL</button>
+            <button id="ac" class="operator bg-green-800 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-green-900 transition">AC</button>
+            <button id="de" class="operator bg-green-900 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-green-950 transition">DEL</button>
             <button id="/" class="operator bg-slate-600 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-700 transition">/</button>
             <button id="*" class="operator bg-slate-600 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-700 transition">*</button>
             <!--NUMEROS-->
@@ -38,6 +39,9 @@
             <button id="." class="operator bg-slate-600 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-700 transition">.</button>
         </section>
     </section>
+    <footer class="text-gray-500 text-sm mt-5">
+        <p>&copyOkami 2026</p>
+    </footer>
 
     <script src="assets/js/app.js"></script>
 </body>
