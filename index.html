@@ -5,31 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/input.css">
 
-    <title>Document</title>
+    <title>CALCULADORA</title>
 </head>
-<body class="min-w-sm max-w-xl m-auto items-center bg-gray-100">
-    <header class="bg-gray-800 text-white p-4">
-        <h1 id="title" class="font-bold text-xl">OKAMI</h1>
-    </header>
+<body class="bg-gray-900 flex items-center justify-center h-screen m-auto min-w-sm max-w-xl">
+    <section id="calculator" class="bg-slate-800 text-white rounded-3xl p-6 text-center shadow-2xl">
+        <!--DISPLAY-->
+        <input type="text" id="display" disabled class="bg-slate-700 rounded-xl text-white mb-10 p-2 text-5xl max-w-sm shadow-xl">
+        <br>
+        <section class="botones grid grid-cols-4 grid-rows-5 gap-2 text-xl">
+            <!--OPERADORES-->
+            <button id="ac" class="operator bg-yellow-700 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-yellow-800 transition">AC</button>
+            <button id="de" class="operator bg-yellow-600 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-yellow-700 transition">DE</button>
+            <button id="/" class="operator bg-slate-600 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-700 transition">/</button>
+            <button id="*" class="operator bg-slate-600 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-700 transition">*</button>
+            <!--NUMEROS-->
+            <button id="7" class="bg-slate-500 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-600 transition">7</button>
+            <button id="8" class="bg-slate-500 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-600 transition">8</button>
+            <button id="9" class="bg-slate-500 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-600 transition">9</button>
+            <button id="-" class="operator bg-slate-600 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-700 transition">-</button>
+            <button id="4" class="bg-slate-500 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-600 transition">4</button>
+            <button id="5" class="bg-slate-500 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-600 transition">5</button>
+            <button id="6" class="bg-slate-500 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-600 transition">6</button>
+            <button id="+" class="operator bg-slate-600 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-700 transition">+</button>
+            <button id="1" class="bg-slate-500 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-600 transition">1</button>
+            <button id="2" class="bg-slate-500 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-600 transition">2</button>
+            <button id="3" class="bg-slate-500 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-600 transition">3</button>
+            
+            <button id="=" class="operator equal bg-slate-700 rounded-2xl p-5 row-span-2 shadow-xl active:scale-95 active:bg-slate-800 transition">=</button>
+            <button id="0" class="bg-slate-500 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-600 transition">0</button>
+            <button id="00" class="bg-slate-500 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-600 transition">00</button>
+            <button id="." class="operator bg-slate-600 rounded-2xl p-5 shadow-xl active:scale-95 active:bg-slate-700 transition">.</button>
+        </section>
+    </section>
 
-    <div id="hover" class="grid grid-cols-3 grid-rows-6 gap-2 mt-2 ml-2 mr-2 text-white">
-        <a class="col-span-2 row-span-3 bg-gray-700 p-2 pb-15 relative overflow-hidden hover:bg-gray-800 hover:scale-102 transition group">
-            <h1>HTML</h1>
-            <img src="assets/img/html_icon.webp" width="150px" class="absolute -bottom-8 -right-9 group-hover:scale-110 group-hover:transition">
-        </a>
-        <a id="hover" class="row-span-3 col-start-3 bg-gray-500 p-2 pb-15 relative overflow-hidden hover:bg-gray-600 hover:scale-102 transition">
-            <h1>CSS</h1>
-        </a>
-        <a id="hover" class="row-span-3 row-start-4 bg-gray-500 p-2 pb-15 relative overflow-hidden hover:bg-gray-600 hover:scale-102 transition">
-            <h1>JavaScript</h1>
-        </a>
-        <a id="hover" class="col-span-2 row-span-3 row-start-4 bg-gray-700 relative overflow-hidden p-2 pb-15 hover:bg-gray-800 hover:scale-102 transition">
-            <h1>C++</h1>
-        </a>
-    </div>
-    
+    <script src="assets/js/app.js"></script>
 </body>
-<script src="assets/js/app.js"></script>
 </html>

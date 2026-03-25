@@ -1,6 +1,16 @@
-let titulo = document.getElementById('title');
-let hoover = document.getElementById('hover');
+const display = document.querySelector('#display');
+const buttons = document.querySelectorAll('button');
 
-hoover.addEventListener('click', function (){
-    titulo.innerHTML = 'HOLA MUNDO';
+buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        if(btn.id === "="){
+            display.value = eval(display.value);
+        } else if(btn.id === "ac"){
+            display.value = '';
+        } else if(btn.id === "de"){
+            display.value = display.value.slice(0, -1);
+        } else{
+            display.value += btn.id;
+        }
+    })
 });
