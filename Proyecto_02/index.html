@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="assets/css/input.css">
+
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+
+    <title>OkamiApp | Proyecto 02</title>
+</head>
+<body class="flex flex-col min-w-sm max-w-3xl justify-center items-center bg-slate-800 text-white m-auto">
+
+    <div class="bg-slate-800 flex sticky top-0 z-40 justify-center m-auto mb-5">
+        <header id="header" class="flex bg-slate-900 pb-3 pt-3 text-xl pl-5 pr-5 justify-between rounded-2xl mt-5 items-center max-sm:w-sm sm:w-2xl shadow-xl/15">
+            <section class="nav_izq flex flex-row items-center gap-1.5">
+                <img src="assets/img/icon.png" alt="" width="35px">
+                <h1>OKAMI</h1>
+            </section>
+            <section class="nav_der flex flex-row gap-2 text-sm items-center">
+                <a href="" target="_blank" class="hover:bg-slate-800 hover:scale-110 hover:text-blue-400 transition p-2 rounded-xl">HOME</a>
+                <a href="" target="_blank" class="hover:bg-slate-800 hover:scale-110 hover:text-blue-400 transition p-2 rounded-xl">PROFILE</a>
+                <a href="" target="_blank" class="hover:bg-slate-800 hover:scale-110 hover:text-blue-400 transition p-2 rounded-xl">CHAT</a>
+            </section>
+        </header>
+    </div>
+
+    <article class="flex flex-col items-center max-sm:w-sm sm:w-2xl">
+        <div id="landing" class="bg-slate-900 rounded-2xl p-5 max-sm:w-sm sm:w-2xl relative overflow-hidden shadow-xl mb-5 group">
+            <div class="relative z-10">
+                <h1 class="text-2xl font-medium mb-3">CUIDAMOS TU SUEÑO</h1>
+                <P class="font-light mb-3 pr-2">Descubre como tus comidas y rutinas impactan en tus horas de sueño.</P>
+                <p class="font-light mb-5 pr-2">Obten un diagnostico claro en simples pasos.</p>
+                <button type="button" class="bg-sky-800 p-2.5 rounded-2xl pr-8 pl-8 hover:bg-sky-600 hover:shadow-sky-300 hover:shadow-lg/10 hover:scale-102 transition-all active:bg-violet-800 active:shadow-violet-500 active:shadow-lg/10">HACER DIAGNOSTICO</button> 
+            </div>
+            <img src="assets/img/cards/hero.png" alt="" class="absolute bottom-7 scale-135 left-30 z-0 mask-l-from-0% group-hover:scale-145 transition">
+        </div>
+    </article>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
